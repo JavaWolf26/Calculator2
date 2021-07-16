@@ -17,8 +17,10 @@ public class Calculator3 {
 
 		if (c1 >= '0' && c1 <= '9') {
 			i1 = Character.getNumericValue(c1);
+			
 			if (c2 >= '0' && c2 <= '9') {
 				i2 = Character.getNumericValue(c2);
+				
 				if (carif == '+' || carif == '-' || carif == '*' || carif == '/') {
 
 					if (carif == '+') {
