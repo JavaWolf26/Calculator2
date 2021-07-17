@@ -32,4 +32,10 @@ public class Massiv {
 		}
 		return i;
 	}
+
+	static void ostatok(String str, int i1, int i2) {
+		if (i1 % i2 != 0)
+			System.out.print("; Ostatoc: " + i1 % i2);
+	}
+
 }

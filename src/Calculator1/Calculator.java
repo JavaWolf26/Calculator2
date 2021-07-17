@@ -28,21 +28,16 @@ public class Calculator extends Massiv {
 				i2 = prov_arab(str2);
 				result = rechenie(arif, i1, i2);
 				System.out.print(result);
-				if (Arrays.asList(arifmetic).indexOf(arif) == 3) {
-					if (i1 % i2 != 0)
-						System.out.print("; Ostatoc: " + i1 % i2);
-				}
-
+				if (Arrays.asList(arifmetic).indexOf(arif) == 3)
+					ostatok(arif, i1, i2);
 			} else if (Arrays.asList(rim).contains(str1) && Arrays.asList(rim).contains(str2)
 					&& Arrays.asList(arifmetic).contains(arif)) {
 				i1 = prov_rim(str1);
 				i2 = prov_rim(str2);
 				result = rechenie(arif, i1, i2);
 				System.out.print(result);
-				if (Arrays.asList(arifmetic).indexOf(arif) == 3) {
-					if (i1 % i2 != 0)
-						System.out.print("; Ostatoc: " + i1 % i2);
-				}
+				if (Arrays.asList(arifmetic).indexOf(arif) == 3)
+					ostatok(arif, i1, i2);
 			} else
 				System.out.println("Nevernii format arifmeti4eskogo virazenia");
 		} catch (ArithmeticException e) {
@@ -50,4 +45,5 @@ public class Calculator extends Massiv {
 		}
 
 	}
+
 }
