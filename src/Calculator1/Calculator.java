@@ -45,5 +45,4 @@ public class Calculator extends Massiv {
 		}
 
 	}
-
 }

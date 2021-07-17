@@ -37,5 +37,4 @@ public class Massiv {
 		if (i1 % i2 != 0)
 			System.out.print("; Ostatoc: " + i1 % i2);
 	}
-
 }
