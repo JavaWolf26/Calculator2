@@ -33,12 +33,4 @@ public class Massiv {
 		return i;
 	}
 
-	static String s1;
-
-	static String ostatok(String str, int i1, int i2) {
-		if (i1 % i2 != 0)
-			s1 = "; Ostatoc: " + i1 % i2;
-		return s1;
-	}
-
 }

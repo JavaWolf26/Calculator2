@@ -29,8 +29,8 @@ public class Calculator extends Massiv {
 				result = rechenie(arif, i1, i2);
 				System.out.print(result);
 				if (Arrays.asList(arifmetic).indexOf(arif) == 3) {
-					ostatok(arif, i1, i2);
-					System.out.print(s1);
+					if (i1 % i2 != 0)
+						System.out.print("; Ostatoc: " + i1 % i2);
 				}
 
 			} else if (Arrays.asList(rim).contains(str1) && Arrays.asList(rim).contains(str2)
@@ -40,8 +40,8 @@ public class Calculator extends Massiv {
 				result = rechenie(arif, i1, i2);
 				System.out.print(result);
 				if (Arrays.asList(arifmetic).indexOf(arif) == 3) {
-					ostatok(arif, i1, i2);
-					System.out.print(s1);
+					if (i1 % i2 != 0)
+						System.out.print("; Ostatoc: " + i1 % i2);
 				}
 			} else
 				System.out.println("Nevernii format arifmeti4eskogo virazenia");
